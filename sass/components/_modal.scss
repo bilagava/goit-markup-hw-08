@@ -1,0 +1,192 @@
+.baсkdrop.is-hidden{
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;   
+}
+
+.baсkdrop{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);   
+}
+
+.modal{
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--main-background);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px; 
+    padding: 40px;
+}
+
+.modal-btn{
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--main-background);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.btn-close{
+    fill: black;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    &:hover {
+        fill: var(--accent-color);
+    }
+}
+
+.modal-title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--second-title-color);   
+    margin-bottom: 12px;
+}
+
+.form-data{
+    margin-bottom: 10px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.form-data-text{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color:var(--main-text-color);
+}
+
+.form-icon-position{
+    position: relative;
+}
+
+.form-data-icon{
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    fill: var(--main-icon-modal-color);
+    cursor: pointer;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        fill: var(--accent-color);
+    }
+    .form-data-input:hover + &,.form-data-input:focus + &{
+        fill: var(--accent-color);
+    }
+}
+
+.form-data-input{
+    margin-top: 4px;
+    padding-left: 42px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        border: 1px solid var(--accent-color);
+        outline: none;
+    }
+}
+
+.comment{
+    margin-bottom: 20px;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.comment textarea{
+    margin-top: 4px;
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 12px 16px;
+    resize: none;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    &::placeholder{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.17;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+    }
+}
+
+.contract{
+    color: var(--accent-color);
+    margin-left: 4px;
+}
+
+.check-text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em; 
+    color: var(--main-text-color); 
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-item {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .check-input:focus + .check-text &  {
+        border: 2px solid var(--accent-color);
+    }
+    .check-input:checked + .check-text & {
+        background-color: var(--accent-color);
+        border: transparent;
+    }
+}
+
+.check-input{
+    appearance: none;
+}
+
+.check-icon {
+    fill: #ffffff;
+}
+
+.modal-btn-send{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}

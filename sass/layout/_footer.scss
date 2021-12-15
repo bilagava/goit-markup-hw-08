@@ -1,0 +1,120 @@
+.footer{
+    background-color:var(--footer-background); 
+    max-width: 1600px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__container{
+    display: flex; 
+    align-items: baseline;
+}
+.footer__logo {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer__studio{
+    color:var(--main-title-color);
+    }
+
+    .footer__item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+.footer__adress{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--main-title-color);
+    transition-property: color; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+}
+
+.footer__link{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color:var(--contacts-color);
+    transition-property: color; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+}
+
+.footer__social{
+    margin-left: 70px;
+    margin-top: 15px;
+}
+.footer__social-title{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+    margin-right: 61px;
+    color: var(--main-title-color);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.social-list__link-wheit{
+    color:var(--sekond-social-color);
+    background-color:rgba(255, 255, 255, 0.1);
+}
+
+.mailing__title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-title-color);
+    margin-left: 93px;
+    margin-bottom: 20px;
+}
+
+.mailing__form{
+    display: flex; 
+}
+
+.mailing__input{
+    margin-left: 93px;
+    margin-right: 12px;
+    width: 358px;
+    height: 50px;
+    padding: 0;
+    padding-left: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--footer-background);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: var(--main-background);
+}
+
+.footer__btn-subscribe{
+    display: flex;
+}
+
+.footer__btn-icon{
+    margin-left: 10px;
+}
