@@ -1,14 +1,23 @@
 .porfolio__list{
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
-}
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    margin-top: -15px;
+    @media screen and (min-width:768px) {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+    @media screen and (min-width:768px) {
+        margin-bottom: 50px;
+    }
+    }
 
 .porfolio__item:not(:last-child){
     margin-right: 8px;
     }
 
 .porfolio__btn{
+    margin-top: 15px;
     padding: 6px 22px;
     border-radius: 4px;  
     font-weight: 500;
