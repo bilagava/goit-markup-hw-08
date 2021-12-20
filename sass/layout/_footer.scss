@@ -6,28 +6,29 @@
 }
 
 .footer__container{
+    text-align: center;
     @media screen and (min-width:1200px) {
+        text-align: left;
         display: flex; 
-        align-items: baseline; 
+        align-items: baseline;
+        
     } 
     
 }
 .footer__logo {
-    display: flex;
-    justify-content:center;
+    margin: 0;
     margin-bottom: 20px;
-    // display: block;
-    
+    display: block;
 }
 
 .footer__studio{
     color:var(--main-title-color);
     }
 
-.footer__item{
-    display: flex;
-    justify-content:center;  
-}
+// .footer__item{
+//     justify-content:center;  
+// }
+
 .footer__item:not(:last-child){
     margin-bottom: 8px; 
     @media screen and (min-width:1200px) {
@@ -70,20 +71,17 @@
 
 .footer__social{
     @media screen and (min-width:1200px) {
-        margin-left: 70px;
-        margin-top: 15px;
+        margin-left: 85px;
     } 
     
 }
-.footer__social-list{
-    justify-content:center;
-}
+// .footer__social-list{
+//     justify-content:center;
+// }
 
 .footer__social-title{
-    display: flex;
-    justify-content:center;
     margin-bottom: 20px;
-    margin-top: 60px; 
+    margin-top: 60px;
     color: var(--main-title-color);
     font-weight: 700;
     font-size: 14px;
@@ -91,7 +89,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     @media screen and (min-width:1200px) {
-        margin-right: 61px;
+        // margin-left: 61px;
+        margin-top: 0;
     } 
 }
 
@@ -101,8 +100,6 @@
 }
 
 .mailing__title{
-    display: flex;
-    justify-content:center;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -112,8 +109,8 @@
     margin-top: 60px;
     margin-bottom: 20px;
     @media screen and (min-width:1200px) {
-        margin-left: 93px;
-    margin-bottom: 20px;
+    margin-left: 93px;
+    margin-top: 0;
     }  
 }
 
@@ -128,9 +125,10 @@
     height: 50px;
     padding: 0;
     padding-left: 16px;
+    margin-bottom: 20px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -145,17 +143,18 @@
     @media screen and (min-width:1200px) {
         margin-left: 93px;
         margin-right: 12px; 
+        margin-bottom: 0;
         width: 358px;
     }
 }
 
-.footer__btn-subscribe{
-    display: block;
+.mailing__btn-subscribe{
+    display: flex;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    
 }
 
-.footer__btn-icon{
+.mailing__btn-icon{
     margin-left: 10px;
 }
