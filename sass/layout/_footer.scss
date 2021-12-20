@@ -3,6 +3,7 @@
     max-width: 1600px;
     padding-top: 60px;
     padding-bottom: 60px;
+    position: relative;
 }
 
 .footer__container{
@@ -15,6 +16,8 @@
     } 
     
 }
+
+
 .footer__logo {
     margin: 0;
     margin-bottom: 20px;
@@ -25,9 +28,6 @@
     color:var(--main-title-color);
     }
 
-// .footer__item{
-//     justify-content:center;  
-// }
 
 .footer__item:not(:last-child){
     margin-bottom: 8px; 
@@ -75,9 +75,6 @@
     } 
     
 }
-// .footer__social-list{
-//     justify-content:center;
-// }
 
 .footer__social-title{
     margin-bottom: 20px;
@@ -89,7 +86,6 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     @media screen and (min-width:1200px) {
-        // margin-left: 61px;
         margin-top: 0;
     } 
 }
@@ -137,7 +133,6 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 1.25;
-    align-items: center;
     letter-spacing: 0.03em;
     color: var(--main-background);
     @media screen and (min-width:1200px) {

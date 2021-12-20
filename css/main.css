@@ -793,6 +793,7 @@ img {
   max-width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
+  position: relative;
 }
 
 .footer__container {
@@ -926,7 +927,6 @@ img {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
-  align-items: center;
   letter-spacing: 0.03em;
   color: var(--main-background);
 }
