@@ -793,18 +793,24 @@ img {
   max-width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
-  position: relative;
 }
 
 .footer__container {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .footer__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer__container {
-    text-align: left;
-    display: flex;
-    align-items: baseline;
+    text-align: start;
   }
 }
 
@@ -877,7 +883,7 @@ img {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .footer__social-title {
     margin-top: 0;
   }
@@ -919,6 +925,8 @@ img {
   padding-left: 16px;
   margin-bottom: 20px;
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
