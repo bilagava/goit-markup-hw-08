@@ -14,9 +14,10 @@
 }
 
 .nav__logo {
-    margin-right: 93px;
-    padding-top: 24px;
-    padding-bottom: 25px;
+    // margin-right: 93px;
+    margin-right: 88px;
+    // padding-top: 24px;
+    // padding-bottom: 25px;
 }
 
 .nav__studio{
@@ -37,8 +38,10 @@
     display: block;
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.17;
+    // font-size: 14px;
+    // line-height: 1.14;
     letter-spacing: 0.02em;
     color:var(--second-title-color);
     position: relative;
@@ -64,19 +67,22 @@
 }
 
 .contact-list{
-    display: flex;
-    margin-left: auto; 
+    // display: flex;
+    // margin-left: auto; 
+    margin-left: 93px;
 }
-
-.contact-list__item:not(:last-child){
-    margin-right: 50px;
+.contact-list__item:last-child{
+    margin-top: 10px;
 }
+// .contact-list__item:not(:last-child){
+//     margin-right: 50px;
+// }
 
 .contact-list__link{
     display: flex;
     align-items: center; 
-    padding-top: 32px;
-    padding-bottom: 32px;
+    // padding-top: 32px;
+    // padding-bottom: 32px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -90,6 +96,7 @@
 }
 
 .contact-list__icon{
-    margin-right: 10px;
+    margin-right: 8px;
+    // margin-right: 10px;
     fill: currentColor;
 }
