@@ -33,9 +33,17 @@
                         <use href="./images/icons.svg#icon-smartphone"></use>
                     </svg>+38 096 111 11 11</a></li>
                 </ul>
+                <button 
+                    class="menu-toggle js-open-menu" 
+                    aria-expanded="false" 
+                    aria-controls="mobile-menu">
+                    <svg class="btn-open" width="27" height="27">
+                        <use href="./images/icons.svg#icon-menu_24px"></use>
+                    </svg>
+                </button>
             </div>   
         </header>  
-        <main>
+        <main>         
             <!--=================== HERO ==================== -->          
             <section class="hero">
                 <div class="container">   
@@ -147,8 +155,10 @@
                                 ./images/mob/ИгорьДемьяненко@2x.jpg 2x"
                                 media="(min-width:480px)"
                                 >
+                                <img 
+                                src="./images/mob/ИгорьДемьяненко.jpg" 
+                                alt="Игорь Демьяненко">
                             </picture>
-                            <img src="./images/mob/ИгорьДемьяненко.jpg" alt="Игорь Демьяненко" width="" height="">
                             <div>
                                 <h3 class="command__name">Игорь Демьяненко</h3>
                                 <p class="command__after-title">Product Desinger</p>
@@ -199,10 +209,12 @@
                                 <source 
                                 srcset="./images/mob/ОльгаРепина.jpg 1x,
                                 ./images/mob/ОльгаРепина@2x.jpg 2x"
-                                media="(min-width:450px)"
+                                media="(min-width:480px)"
                                 >
-                            </picture>
-                            <img src="./images/mob/ОльгаРепина.jpg" alt="Ольга Репина" width="" height="">
+                                <img 
+                                src="./images/mob/ОльгаРепина.jpg" 
+                                alt="Ольга Репина" >
+                            </picture>                          
                             <div>
                                 <h3 class="command__name">Ольга Репина</h3>
                                 <p class="command__after-title">Frontend Developer</p>
@@ -253,10 +265,12 @@
                                 <source 
                                 srcset="./images/mob/НиколайТарасов.jpg 1x,
                                 ./images/mob/НиколайТарасов@2x.jpg 2x"
-                                media="(min-width:450px)"
-                                > 
-                            </picture>
-                            <img src="./images/mob/НиколайТарасов.jpg" alt="Николай Тарасов" width="" height="">
+                                media="(min-width:480px)"
+                                >
+                                <img 
+                                src="./images/mob/НиколайТарасов.jpg" 
+                                alt="Николай Тарасов"> 
+                            </picture>                          
                             <div>
                                 <h3 class="command__name">Николай Тарасов</h3>
                                 <p class="command__after-title">Marketing</p>
@@ -309,8 +323,10 @@
                                 ./images/mob/МихаилЕрмаков@2x.jpg 2x"
                                 media="(min-width:480px)"
                                 > 
-                            </picture>
-                            <img src="./images/mob/МихаилЕрмаков.jpg" alt="Михаил Ермаков" width="" height="">
+                                <img 
+                                src="./images/mob/МихаилЕрмаков.jpg" 
+                                alt="Михаил Ермаков">
+                            </picture>                         
                             <div>
                                 <h3 class="command__name">Михаил Ермаков</h3>
                                 <p class="command__after-title">UI Desinger</p>
@@ -499,15 +515,7 @@
                     <div class="comment">
                         <label class="form-data-text" for="user-comment">Коментарий</label>
                         <textarea name="comment" id="user-comment" placeholder="Введите текст"></textarea>
-                    </div> 
-
-                    <!-- <div class="check-box">
-                        <input type="checkbox" name="consent" id="user-consent"  class="check-input" >
-                        <span class="check-icon"></span>
-                        <label for="user-consent" class="check-text">Соглашаюсь с рассылкой и принимаю <a href="#" class="contract">Условия договора</a>
-                        </label>
-                    </div>  -->
-                    
+                    </div>                    
                     <div class="check-box">
                         <input type="checkbox" name="policy" id="policy" class="check-input "/>
                         <label for="policy" class="check-text">
@@ -526,8 +534,55 @@
                 </form>
             </div>
         </div>
+         <!-- ================= MOBILE-MENU ============== -->
+         <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu">
+                <svg class="btn-close" width="27" height="27">
+                    <use href="./images/icons.svg#icon-close_24px"></use>
+                </svg>
+            </button>
+            <ul class="list menu-container__mobile-menu">
+                <li class="menu-container__item">
+                    <a class="link menu-container__link current"  href="./index.html">Студия</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="link menu-container__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="menu-container__item">
+                    <a class="link menu-container__link" href="">Контакты</a>
+                </li>
+            </ul>
+            <ul class=" list menu-container__contact-menu">
+                <li class="menu-container__contact-item">
+                    <a href="mailto:info@devstudio.com" class="link menu-container__contact-link">info@devstudio.com</a>
+                </li>
+                <li class="menu-container__contact-item">
+                    <a href="tel:+380961111111" class="link menu-container__contact-link">+38 096 111 11 11</a>
+                </li>
+            </ul>
+            <ul class=" list menu-container__social-list">
+                <li class="menu-container__social-item">
+                    <a href="#" class="link menu-container__social-link">Instagram</a>
+                </li>
+                <li class="menu-container__social-item">
+                    <a href="#" class="link menu-container__social-link">Twitter</a>
+                </li>
+                <li class="menu-container__social-item">
+                    <a href="#" class="link menu-container__social-link">Facebook</a>
+                </li>
+                <li class="menu-container__social-item">
+                    <a href="#" class="link menu-container__social-link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
         <!--=================== JS ==================== --> 
         <script src="./js/modal.js"></script>
-        <!-- <script src=".mobile-menu.js"></script> -->
+        <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+        ></script>
+        <script defer src="js/"></script>
     </body>
 </html>

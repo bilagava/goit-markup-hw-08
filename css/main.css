@@ -158,8 +158,8 @@ img {
 
 .modal {
   position: absolute;
-  width: 528px;
-  min-height: 581px;
+  width: 100%;
+  min-height: 100%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -167,6 +167,20 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-btn {
@@ -194,12 +208,19 @@ img {
 
 .modal-title {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
   margin-bottom: 12px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal-title {
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .form-data {
@@ -256,15 +277,20 @@ img {
 }
 
 .comment {
-  margin-bottom: 20px;
   /* display: flex;
     flex-direction: column; */
+}
+
+@media screen and (min-width: 480px) {
+  .comment {
+    margin-bottom: 20px;
+  }
 }
 
 .comment textarea {
   margin-top: 4px;
   width: 100%;
-  height: 120px;
+  height: 80px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
@@ -275,6 +301,12 @@ img {
   line-height: 1.14;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+@media screen and (min-width: 480px) {
+  .comment textarea {
+    height: 120px;
+  }
 }
 
 .comment textarea::placeholder {
@@ -292,14 +324,21 @@ img {
 
 .check-text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   display: flex;
   position: relative;
   align-items: center;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .check-item {
@@ -346,13 +385,30 @@ img {
   align-items: center;
 }
 
+.btn-open {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .btn-open {
+    display: none;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
 }
 
 .nav__logo {
-  margin-right: 88px;
+  margin-right: 276px;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__logo {
+    margin-right: 88px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -366,7 +422,13 @@ img {
 }
 
 .nav__list {
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: flex;
+  }
 }
 
 .nav__item:not(:last-child) {
@@ -415,6 +477,12 @@ img {
 
 .contact-list {
   margin-left: 93px;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-list {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -692,7 +760,7 @@ img {
 }
 
 .command__item {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
   padding-bottom: 24px;
   background-color: var(--main-background);
@@ -794,12 +862,17 @@ img {
 .clients__list {
   display: flex;
   flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
+}
+
+@media screen and (min-width: 480px) {
+  .clients__list {
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
 }
 
 .clients__item {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -979,14 +1052,12 @@ img {
 }
 
 .mailing__input {
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 0;
   padding-left: 16px;
   margin-bottom: 20px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -997,6 +1068,14 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: var(--main-background);
+}
+
+@media screen and (min-width: 768px) {
+  .mailing__input {
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1076,7 +1155,7 @@ img {
 
 .project__item {
   border: 1px solid #EEEEEE;
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -1124,13 +1203,22 @@ img {
 
 .project__description {
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
+  font-size: 16px;
+  line-height: 1.42;
   letter-spacing: 0.03em;
   background-color: var(--accent-color);
   color: var(--main-background);
-  width: 450px;
-  padding: 77px 24px;
+  width: 100%;
+  height: 100%;
+  padding: 10%;
+}
+
+@media screen and (min-width: 480px) {
+  .project__description {
+    font-size: 18px;
+    line-height: 1.56;
+    padding: 77px 24px;
+  }
 }
 
 @media screen and (min-width: 768px) {
