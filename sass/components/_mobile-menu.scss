@@ -3,49 +3,56 @@
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vw;
-    background-color: white;
-    padding: 48px 0 48px 40px;
-    z-index: 10;
-    @media screen and (min-width:481px) {
-        display: none;
+    height: 100vh;
+    background-color: var(--header-background);
+    padding: 48px 40px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &.is-hidden{
+        visibility: hidden;
+        pointer-events: none;
+        opacity: 0;   
     }
 }
 
-// .menu-toggle {
-// }
-
-.btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
+.close-menu-btn{
+    padding: 0;
+    background-color: var(--header-background);
+    position: absolute ;
+    top: 10px;
+    right: 15px;
 }
 
-// .mobile-menu {
-//    }
-// .menu-container__item {
-// }
+.menu-container__item{
+    &:not(:last-child){
+        margin-bottom: 32px;
+    }
+}
 .menu-container__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1,17px;
     letter-spacing: 0.02em;
-    color: #212121;
-
+    color: var(--second-title-color);
 }
-// .current {
-// }
-// .menu-container__contact-menu {
-// }
-// .menu-container__contact-item {
-// }
+
+.menu-container__contact-item {
+    display: block;
+    margin-top: auto;
+}
 
 .menu-container__contact-tel {
     font-weight: 500;
-    font-size: 34px;
+    font-size: 26px;
     line-height: 1,18;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--accent-color);
+    @media screen and (min-width:480px) {
+        font-size: 34px;
+        line-height: 1,18;
+    }
 }
 
 .menu-container__contact-mail {
@@ -53,20 +60,29 @@
     font-size: 24px;
     line-height: 1,17;
     letter-spacing: 0.02em;
-    color: #757575;
+    color: var(--main-text-color);
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 64px;
 }
 .menu-container__social-list {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    margin-bottom: -20px;
 }
 
-.menu-container__social-item:not(:last-child){
-    margin-right: 20px;
+.menu-container__social-item{
+    margin-bottom: 20px;
+    &:not(:last-child){
+        margin-right: 20px;
+    }
 }
+
 .menu-container__social-link {
     font-weight: 500;
     font-size: 18px;
     line-height: 1,22;
     letter-spacing: 0.02em;
-    color: #2196F3;
+    color: var(--accent-color);
 }
