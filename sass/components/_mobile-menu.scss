@@ -25,12 +25,12 @@
     right: 15px;
 }
 
-.menu-container__item{
+.menu-container__mobile-item{
     &:not(:last-child){
         margin-bottom: 32px;
     }
 }
-.menu-container__link {
+.menu-container__mobile-link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1,17px;
